@@ -1,0 +1,12 @@
+﻿
+@model List<Studenti>
+
+
+<h1> Gjate orarit e sotem jane regjistruar: </h1>
+
+@foreach(Studenti stud in Model)
+{
+    int num = 1;
+    <p> @num @stud.Emri @stud.Mbiemri </p>
+    num++;
+}
